@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "MillFlow",
+    "footer": "MillFlow - диірмен операцияларын басқару жүйесі"
+  },
+  "nav": {
+    "dashboard": "Басқару тақтасы",
+    "grainIntake": "Астық қабылдау",
+    "production": "Өндіріс",
+    "warehouse": "Қойма",
+    "shipments": "Жөнелту",
+    "reports": "Есептер",
+    "about": "Жоба туралы",
+    "audit": "Әрекеттер журналы",
+    "logout": "Шығу"
+  },
+  "common": {
+    "search": "Іздеу",
+    "filters": "Сүзгілер",
+    "add": "Қосу",
+    "create": "Жасау",
+    "edit": "Өңдеу",
+    "delete": "Жою",
+    "view": "Қарау",
+    "save": "Сақтау",
+    "cancel": "Бас тарту",
+    "actions": "Әрекеттер",
+    "status": "Күйі",
+    "loading": "Жүктелуде...",
+    "error": "Қате орын алды",
+    "success": "Сәтті сақталды",
+    "empty": "Деректер жоқ",
+    "all": "Барлығы",
+    "yes": "Иә",
+    "no": "Жоқ",
+    "role": "Рөл"
+  },
+  "login": {
+    "title": "Жүйеге кіру",
+    "subtitle": "MillFlow операциялық платформасына қауіпсіз кіру",
+    "email": "Электрондық пошта",
+    "password": "Құпиясөз",
+    "submit": "Кіру",
+    "demoCredentials": "Демо тіркелгілер",
+    "invalid": "Email немесе құпиясөз қате"
+  },
+  "dashboard": {
+    "title": "Басқару тақтасы",
+    "grainVolume": "Қабылданған астық көлемі",
+    "flourVolume": "Өндірілген ұн көлемі",
+    "warehouseStock": "Қоймадағы қалдық",
+    "shipments": "Жөнелту саны",
+    "lowStock": "Төмен қалдық",
+    "lastActivity": "Соңғы белсенділік",
+    "grainChart": "Апталар бойынша астық қабылдау",
+    "productionChart": "Өндіріс көлемі",
+    "shipmentChart": "Күйі бойынша жөнелту",
+    "recentGrain": "Соңғы астық партиялары",
+    "recentShipments": "Соңғы жөнелтілімдер",
+    "lowStockItems": "Қалдығы аз позициялар"
+  }
+}

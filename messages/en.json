@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "MillFlow",
+    "footer": "MillFlow - flour mill operations management system"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "grainIntake": "Grain Intake",
+    "production": "Production",
+    "warehouse": "Warehouse",
+    "shipments": "Shipments",
+    "reports": "Reports",
+    "about": "About Project",
+    "audit": "Audit Log",
+    "logout": "Logout"
+  },
+  "common": {
+    "search": "Search",
+    "filters": "Filters",
+    "add": "Add",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "save": "Save",
+    "cancel": "Cancel",
+    "actions": "Actions",
+    "status": "Status",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Saved successfully",
+    "empty": "No data available",
+    "all": "All",
+    "yes": "Yes",
+    "no": "No",
+    "role": "Role"
+  },
+  "login": {
+    "title": "System Login",
+    "subtitle": "Secure access to the MillFlow operational platform",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "demoCredentials": "Demo credentials",
+    "invalid": "Invalid email or password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "grainVolume": "Accepted grain volume",
+    "flourVolume": "Produced flour volume",
+    "warehouseStock": "Warehouse stock",
+    "shipments": "Shipments count",
+    "lowStock": "Low stock items",
+    "lastActivity": "Latest activity",
+    "grainChart": "Weekly grain intake",
+    "productionChart": "Production output",
+    "shipmentChart": "Shipments by status",
+    "recentGrain": "Recent grain batches",
+    "recentShipments": "Recent shipments",
+    "lowStockItems": "Low stock positions"
+  }
+}
