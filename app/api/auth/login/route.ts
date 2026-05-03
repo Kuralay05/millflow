@@ -1,8 +1,8 @@
-import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
 import User from "@/models/User";
 import { connectToDatabase } from "@/lib/db/mongoose";
 import { loginSchema } from "@/lib/validation";
-import { parseRequest, ok } from "@/lib/api";
+import { parseRequest } from "@/lib/api";
 import { signToken } from "@/lib/auth/jwt";
 import { SESSION_COOKIE } from "@/lib/constants";
 import { handleApiError } from "@/lib/server";
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     } | null;
 
     if (!user || user.password !== password) {
-      return Response.json(
+      return NextResponse.json(
         { success: false, error: "Invalid email or password" },
         { status: 401 }
       );
@@ -34,18 +34,24 @@ export async function POST(request: Request) {
       role: user.role
     });
 
-    cookies().set(SESSION_COOKIE, token, {
+    const response = NextResponse.json({
+      success: true,
+      data: {
+        fullName: user.fullName,
+        email: user.email,
+        role: user.role
+      }
+    });
+
+    response.cookies.set(SESSION_COOKIE, token, {
       httpOnly: true,
       sameSite: "lax",
       path: "/",
+      secure: true,
       maxAge: 60 * 60 * 24 * 7
     });
 
-    return ok({
-      fullName: user.fullName,
-      email: user.email,
-      role: user.role
-    });
+    return response;
   } catch (error) {
     return handleApiError(error);
   }
